@@ -1,5 +1,5 @@
 # Hi, I'm Karthik Devendra Rao 👋
-### Senior Frontend Developer | Angular Expert | AI Solutions Architect
+### Senior Frontend Developer | Angular Developoer
 
 I thrive at the intersection of engineering and design—leading cross-functional teams, upgrading legacy systems, and delivering measurable results. With **3+ years of experience**, I’ve helped scale platforms used by millions, improving performance by **25%** and compatibility by **40%**.
 
