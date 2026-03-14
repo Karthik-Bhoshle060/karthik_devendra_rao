@@ -52,6 +52,8 @@ p {
   font-size: 15px;
   color: rgba(245,240,232,0.4);
   margin-top: 16px;
+  text-decoration: none;
+   &:hover { color: var(--accent); }
 }
 
 .social-links {
