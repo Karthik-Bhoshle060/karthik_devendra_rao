@@ -33,19 +33,58 @@ p {
   margin-bottom: 48px;
 }
 
-.contact-email {
-  display: inline-block;
-  font-family: 'Fraunces', serif;
-  font-size: clamp(18px, 2.5vw, 28px);
-  font-weight: 700;
-  color: var(--bg);
-  text-decoration: none;
-  border-bottom: 2px solid var(--accent);
-  padding-bottom: 4px;
-  transition: color 0.2s;
+// .contact-email {
+//   display: inline-block;
+//   font-family: 'Fraunces', serif;
+//   font-size: clamp(18px, 2.5vw, 28px);
+//   font-weight: 700;
+//   color: var(--bg);
+//   text-decoration: none;
+//   border-bottom: 2px solid var(--accent);
+//   padding-bottom: 4px;
+//   transition: color 0.2s;
+//    display: inline-flex; align-items: center; gap: 10px;
+//   background: var(--ink); color: var(--bg);
+//   font-size: 14px; font-weight: 600;
+//   padding: 14px 28px; border-radius: 99px;
+//   text-decoration: none;
+//   transition: transform 0.2s, background 0.2s;
+//   white-space: nowrap;
 
-  &:hover { color: var(--accent); }
+//   &:hover { color: var(--accent); }
+// }
+.contact-email {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  padding: 14px 28px;
+  border-radius: 999px;
+
+  background: var(--ink);
+  color: var(--bg);
+
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+
+  border: 2px solid var(--accent);
+
+  transition: 
+    transform 0.25s ease,
+    background 0.25s ease,
+    color 0.25s ease,
+    box-shadow 0.25s ease;
+    &:hover {
+  background: var(--accent);
+  color: #fff;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(255, 102, 0, 0.35);
 }
+}
+
+
 
 .contact-phone {
   display: block;
