@@ -1,0 +1,20 @@
+<section id="experience">
+  <div class="section-label reveal">Experience</div>
+  <div class="exp-list">
+    @for (exp of experiences; track exp.company) {
+      <div class="exp-card reveal">
+        <div class="exp-header">
+          <div class="exp-role">{{ exp.role }}</div>
+          <span class="exp-period">{{ exp.period }}</span>
+        </div>
+        <div class="exp-company">{{ exp.company }}</div>
+        <div class="exp-project">{{ exp.project }}</div>
+        <ul class="exp-bullets">
+          @for (bullet of exp.bullets; track bullet) {
+            <li>{{ bullet }}</li>
+          }
+        </ul>
+      </div>
+    }
+  </div>
+</section>

@@ -1,0 +1,37 @@
+<nav [class.scrolled]="isScrolled">
+  <a class="nav-logo" href="#" (click)="scrollToTop($event)">Karthik D. Rao</a>
+
+  <ul class="nav-links">
+    @for (link of navLinks; track link.section) {
+      <li>
+        <a #navLink
+           href="#"
+           (click)="scrollTo(link.section, $event)"
+           [class.active]="isActive(link.section)">
+          {{ link.label }}
+        </a>
+      </li>
+    }
+  </ul>
+
+  <button class="hamburger"
+    [class.open]="isMobileMenuOpen"
+    (click)="toggleMobileMenu()"
+    aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="mobile-menu" [class.open]="isMobileMenuOpen">
+  <ul>
+    @for (link of navLinks; track link.section) {
+      <li>
+        <a href="#"
+           (click)="scrollTo(link.section, $event)"
+           [class.active]="isActive(link.section)">
+          {{ link.label }}
+        </a>
+      </li>
+    }
+  </ul>
+</div>
